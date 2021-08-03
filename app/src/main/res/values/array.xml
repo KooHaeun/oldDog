@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sort">
+        <item>전체</item>
+        <item>진료</item>
+        <item>미용</item>
+        <item>검사</item>
+    </array>
+</resources>

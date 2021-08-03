@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="16sp"
+        android:text="약"/>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:id="@+id/sort_medi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text">
+        <RadioGroup
+            android:id="@+id/eat_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/eat_medi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="먹는 약" />
+
+            <RadioButton
+                android:id="@+id/cover_medi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="바르는 약" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sort_ch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="상세보기"
+        android:textSize="17dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

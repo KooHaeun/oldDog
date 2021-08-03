@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="48dp"
+        android:text="날짜추가"
+        android:layout_margin="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/guide"
+        app:layout_constraintTop_toBottomOf="@+id/cal"
+        android:padding="5dp"
+        android:text="종류"
+        android:textSize="16sp"/>
+
+    <Spinner
+        android:id="@+id/spin1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:entries="@array/sort"
+        app:layout_constraintLeft_toLeftOf="@+id/guide"
+        app:layout_constraintTop_toBottomOf="@+id/sort"
+        />
+    <TextView
+        android:id="@+id/hos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/guide"
+        app:layout_constraintTop_toBottomOf="@+id/spin1"
+        android:text="병원"
+        android:textSize="16sp"
+        android:padding="5dp"/>
+    <Spinner
+        android:id="@+id/spin2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:entries="@array/sort"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guide"
+        app:layout_constraintTop_toBottomOf="@+id/hos"
+        />
+    <TextView
+        android:id="@+id/what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guide"
+        app:layout_constraintTop_toBottomOf="@+id/spin2"
+        android:text="내용"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/what_in"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guide"
+        app:layout_constraintTop_toBottomOf="@+id/what"
+        android:hint="내용을 입력하세요" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
